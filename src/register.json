@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "chain",
+      "label": "Chain",
+      "kind": "fact",
+      "state": "stated",
+      "value": "Solana",
+      "rpc": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "recorded": "2026-10-13"
+    },
+    {
+      "id": "ca",
+      "label": "Mint address",
+      "kind": "address",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "recorded": "2026-10-13"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "kind": "social",
+      "network": "x",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "recorded": "2026-10-13"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "kind": "social",
+      "network": "github",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "recorded": "2026-10-13"
+    },
+    {
+      "id": "market-source",
+      "label": "Token feed",
+      "kind": "source",
+      "state": "stated",
+      "url": "https://api.dexscreener.com",
+      "boostsPath": "/token-boosts/top/v1",
+      "pairsPath": "/tokens/v1/solana/",
+      "chainId": "solana",
+      "top": 10,
+      "pollMs": 60000,
+      "timeoutMs": 8000,
+      "source": "client statement",
+      "scope": "batch-level",
+      "recorded": "2026-10-13"
+    }
+  ]
+}

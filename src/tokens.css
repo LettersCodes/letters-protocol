@@ -1,0 +1,47 @@
+/* Derived from the brand pixels through scripts/lib/assets.mjs. Edit the logo, not this file.
+   source: brand/LOGO LETTERS PNG...png  sha1 88c7fe79baf51bbf54e86bb5ea91aed49a721c73
+   2000x2000 IHDR colour type 6 (rgba), bit depth 8
+   alpha: 3343855 transparent, 9702 partial, 646443 opaque
+   Colour literals live in this file and nowhere else. */
+:root{
+  --p-bg: oklch(0 0 0); /* page background of the opaque export, all four corners rgb 0,0,0 */
+  --p-dark-1: oklch(0.1122 0.0046 145.3); /* rgb 4,5,4 · 0.6% of opaque pixels · first at 933,764 */
+  --p-dark-2: oklch(0.1504 0.0027 67.5); /* rgb 12,11,10 · 2.5% of opaque pixels · first at 1030,756 */
+  --p-dark-3: oklch(0.2038 0.0039 106.7); /* rgb 23,23,21 · 30.4% of opaque pixels · first at 958,755 */
+  --p-dark-4: oklch(0.2596 0.0037 106.7); /* rgb 36,36,34 · 6.2% of opaque pixels · first at 932,619 */
+  --p-dark-5: oklch(0.3131 0.0054 91.6); /* rgb 50,49,46 · 2.8% of opaque pixels · first at 911,617 */
+  --p-dark-6: oklch(0.4154 0.0085 67.6); /* rgb 79,75,71 · 1.4% of opaque pixels · first at 1094,604 */
+  --p-dark-7: oklch(0.4639 0.0136 71.7); /* rgb 94,88,81 · 0.4% of opaque pixels · first at 914,599 */
+  --p-light-1: oklch(0.5638 0.035 74.9); /* rgb 130,115,95 · 0.7% of opaque pixels · first at 826,702 */
+  --p-light-2: oklch(0.6194 0.038 74.1); /* rgb 148,131,109 · 0.8% of opaque pixels · first at 1131,858 */
+  --p-light-3: oklch(0.6791 0.0361 73); /* rgb 166,149,128 · 3.9% of opaque pixels · first at 956,1022 */
+  --p-light-4: oklch(0.7564 0.0352 73.1); /* rgb 190,173,152 · 3.3% of opaque pixels · first at 1278,627 */
+  --p-light-5: oklch(0.8067 0.0358 74.3); /* rgb 206,189,167 · 0.4% of opaque pixels · first at 1275,631 */
+  --p-light-6: oklch(0.8656 0.0313 72.1); /* rgb 224,208,189 · 36.9% of opaque pixels · first at 1264,627 */
+  --p-light-7: oklch(0.9165 0.0313 75.2); /* rgb 240,225,205 · 5.3% of opaque pixels · first at 889,768 */
+  --p-light-8: oklch(0.9516 0.0316 78.2); /* rgb 251,237,216 · 1.0% of opaque pixels · first at 1261,600 */
+  --p-accent: oklch(0.853 0.1443 201.5); /* rgb 10,234,246 · 2.1% of opaque pixels · first at 1133,916 */
+
+  --bg: var(--p-bg);
+  --card: var(--p-dark-3);
+  --card-2: var(--p-dark-4);
+  --soft: var(--p-dark-5);
+  --dim: var(--p-dark-6);
+  --grid: var(--p-dark-2);
+  --ink: var(--p-light-7);
+  --ink-2: var(--p-light-4);
+  --ink-3: var(--p-light-2);
+  --cream: var(--p-light-6);
+  --cream-hi: var(--p-light-8);
+  --cream-lo: var(--p-light-3);
+  --accent: var(--p-accent);
+  --on-accent: var(--p-dark-1);
+  --line: var(--cream-lo);
+  --line-hi: var(--cream);
+  --edge: var(--soft);
+  --glow: color-mix(in oklch, var(--accent) 40%, transparent);
+  --glow-2: color-mix(in oklch, var(--accent) 16%, transparent);
+  --shade: color-mix(in oklch, var(--bg) 72%, transparent);
+  --lift: color-mix(in oklch, var(--cream) 9%, transparent);
+  color-scheme: dark;
+}

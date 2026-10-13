@@ -1,0 +1,19 @@
+{
+  "name": "letters",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Letters: a live Solana board, read one letter at a time.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "measure": "node scripts/measure.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^24.0.0"
+  },
+  "license": "MIT"
+}

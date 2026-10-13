@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Letters</title>
+<meta name="description" content="Ten Solana tiles ranked by turnover, redrawn live, one glyph apiece.">
+<link rel="canonical" href="https://letters.codes/">
+<meta property="og:title" content="Letters">
+<meta property="og:description" content="Solana tiles ranked by turnover, redrawn live.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon.svg">
+<link rel="preload" as="image" href="img/logo-640.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Oxanium:wght@600;800&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+<div class="app">
+
+  <header class="top" id="top-bar">
+    <a class="brand" href="#stage" aria-label="Letters, back to top">
+      <span class="mark" aria-hidden="true"><img src="img/logo-96.png" alt="" width="96" height="72"></span>
+      <span class="brand-t"><b>LETTERS</b><span>letters.codes</span></span>
+    </a>
+    <!--@CA-->
+    <!--@SOCIALS-->
+  </header>
+
+  <aside class="side" aria-label="Sections">
+    <nav class="nav" id="nav">
+      <a href="#stage" data-spy="stage" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Stage</a>
+      <a href="#board" data-spy="board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg>Board</a>
+      <a href="#method" data-spy="method"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Method</a>
+      <a href="#register" data-spy="register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9z"/><path d="M12 11v9M4 6.5l8 4.5 8-4.5"/></svg>Register</a>
+      <a href="#roadmap" data-spy="roadmap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Roadmap</a>
+    </nav>
+    <div class="box promo spot">
+      <b>Read it glyph by glyph.</b>
+      <p>Each token earns one tile. Tap a rail tile: its row comes into view.</p>
+      <a class="btn dk" href="#board">Jump to tiles</a>
+    </div>
+    <div class="grow"></div>
+    <button class="sbtn" id="motion" type="button" role="switch" aria-checked="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><span id="motion-t">Motion on</span></button>
+  </aside>
+
+  <div class="tick" aria-label="Public tape">
+    <div class="run" id="tick-run" aria-hidden="true"><span class="tk-sk sk"></span><span class="tk-sk sk"></span><span class="tk-sk sk"></span><span class="tk-sk sk"></span><span class="tk-sk sk"></span><span class="tk-sk sk"></span></div>
+  </div>
+
+  <main class="main">
+
+    <div class="stagewrap"><section class="stage" id="stage" aria-labelledby="h-stage">
+      <div class="mesh" aria-hidden="true"><i class="blob b1" data-depth="0.12"></i><i class="blob b2" data-depth="0.2"></i><i class="blob b3" data-depth="0.3"></i><i class="blob b4" data-depth="0.16"></i></div>
+      <div class="starfield" aria-hidden="true"><canvas id="stars-far" data-depth="0.1"></canvas><canvas id="stars-near" data-depth="0.34"></canvas></div>
+      <div class="hero-mark" data-depth="0.7" aria-hidden="true"><img src="img/logo-640.png" alt="" width="640" height="483"></div>
+      <div class="ov chips">
+        <span class="pill" id="pill" data-state="loading" role="status"><i></i><span id="pill-t">SYNCING</span></span>
+        <span class="chip">SOLANA</span>
+      </div>
+      <div class="ov stats" id="stats">
+        <div class="stat spot"><b id="st-vol"><span class="sk sk-num"></span></b><span>Turnover</span></div>
+        <div class="stat spot"><b id="st-liq"><span class="sk sk-num"></span></b><span>Depth</span></div>
+        <div class="stat spot"><b id="st-n"><span class="sk sk-num"></span></b><span>Tiles</span></div>
+        <div class="stat spot"><b id="st-up"><span class="sk sk-num"></span></b><span>Risers</span></div>
+        <div class="stat spot"><b id="st-lead"><span class="sk sk-num"></span></b><span>Leader</span></div>
+      </div>
+      <div class="hero">
+        <div class="eyebrow">REALTIME SOLANA TILES</div>
+        <h1 id="h-stage">Spell out what moves.</h1>
+        <p>Ten tiles ranked by turnover, redrawn live, quiet whenever you leave.</p>
+        <div class="acts">
+          <a class="btn dk" href="#board">See tiles</a>
+          <a class="btn" href="#method">Method notes</a>
+        </div>
+      </div>
+      <div class="ov float" data-depth="0.95" aria-hidden="true"><div class="fl-tag">LEADING TILE</div><div class="fl-v" id="fl-v">—</div></div>
+      <div class="ov cap"><div class="lbl">NOW <small>IN FRONT</small></div><div class="txt" id="cap-t">Sorting Solana's loudest tiles.</div></div>
+    </section></div>
+
+    <section class="panel" id="board" aria-labelledby="h-board">
+      <div class="vh" data-reveal><div><div class="ey">TILE BOARD</div><h2 id="h-board">Ten loudest tiles</h2><p>Ranked by daily turnover. Switch tabs to reshuffle.</p></div></div>
+      <div class="dpanel spot" data-reveal>
+        <div class="dbar">
+          <div class="dtabs" role="tablist" aria-label="Ranking" id="rank-tabs">
+            <button type="button" role="tab" aria-selected="true" data-sort="vol" id="tab-vol">Turnover</button>
+            <button type="button" role="tab" aria-selected="false" data-sort="chg" id="tab-chg" tabindex="-1">Momentum</button>
+            <button type="button" role="tab" aria-selected="false" data-sort="liq" id="tab-liq" tabindex="-1">Depth</button>
+          </div>
+          <div class="dtools"><input class="dsearch" id="search" type="search" placeholder="Search symbols" aria-label="Search symbols" autocomplete="off" spellcheck="false"></div>
+        </div>
+        <div class="dhead" aria-hidden="true"><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span></div>
+        <div class="rows" id="rows" role="tabpanel" aria-labelledby="tab-vol" aria-live="off">
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+          <div class="drow sk-row" aria-hidden="true"><div class="dmain"><div class="dag"><span class="sk sk-tile"></span><span class="sk sk-line"></span></div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-tile"></span></div></div>
+        </div>
+        <div class="dfoot" id="dfoot">Public numbers, zero recommendations.</div>
+        <div class="sr" id="copy-live" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="method" aria-labelledby="h-method">
+      <div class="vh" data-reveal><div><div class="ey">METHOD</div><h2 id="h-method">From noise to tiles</h2><p>Six steps: crowded feed in, scannable tiles out.</p></div></div>
+      <div class="steps">
+        <div class="step spot" data-reveal><div class="n">01 · SOURCE</div><h4>Pull the boosted list</h4><p>Ask which Solana tokens get pushed hardest right this minute.</p></div>
+        <div class="step spot" data-reveal><div class="n">02 · FILTER</div><h4>Keep one network</h4><p>Other chains are dropped before measuring starts.</p></div>
+        <div class="step spot" data-reveal><div class="n">03 · MEASURE</div><h4>Read every pair</h4><p>Survivors are priced across their trading pairs; depth and turnover summed.</p></div>
+        <div class="step spot" data-reveal><div class="n">04 · RANK</div><h4>Sort by turnover</h4><p>Turnover sets order. Only the loudest ten earn tiles.</p></div>
+        <div class="step spot" data-reveal><div class="n">05 · REDRAW</div><h4>Repeat every minute</h4><p>This board re-reads itself while the tab stays open, resting once you wander off.</p></div>
+        <div class="step spot" data-reveal><div class="n">06 · HOLD</div><h4>Freeze the previous read</h4><p>Feed stumbles? Tiles stay put, a dash marks the gap until recovery.</p></div>
+      </div>
+      <div class="card spot" data-reveal><p><b>Worth remembering.</b> Letters displays public numbers. It trades nothing, vouches for nothing. Paid boosts exist, so treat tiles as questions.</p></div>
+    </section>
+
+    <section class="panel" id="register" aria-labelledby="h-register">
+      <div class="vh" data-reveal><div><div class="ey">REGISTER</div><h2 id="h-register">Facts, one record each</h2><p>Each outside fact here sits inside a single record. Stated, or not. Missing records stay silent until somebody states them.</p></div></div>
+      <div class="reg" id="reg-list">
+<!--@REGISTER_ROWS-->
+      </div>
+    </section>
+
+    <section class="panel" id="roadmap" aria-labelledby="h-roadmap">
+      <div class="vh" data-reveal><div><div class="ey">ROADMAP</div><h2 id="h-roadmap">Four stages</h2><p>Each stage opens after its predecessor stands alone.</p></div></div>
+      <div class="pgrid">
+        <div class="pcard spot" data-reveal><div class="n">STAGE I</div><h4>Alphabet</h4><p>Ship live tiles, a feed health signal, plus the register guarding every claim.</p></div>
+        <div class="pcard spot" data-reveal><div class="n">STAGE II</div><h4>Words</h4><p>Switch on community links plus an address slot once each is stated.</p></div>
+        <div class="pcard spot" data-reveal><div class="n">STAGE III</div><h4>Sentences</h4><p>Hand holders filters and views, cutting tiles along personal lines.</p></div>
+        <div class="pcard spot" data-reveal><div class="n">STAGE IV</div><h4>Library</h4><p>Publish source, document method, hand parts to builders.</p></div>
+      </div>
+    </section>
+
+    <footer class="foot"><b>LETTERS</b><span>letters.codes</span><span>Public numbers, zero recommendations.</span></footer>
+  </main>
+
+  <aside class="right" aria-label="Feed panel">
+    <div class="box ev spot" id="ev">
+      <h2 class="ink" id="ev-h">SYNCING</h2>
+      <div class="sub" id="ev-s">Reaching for Solana.</div>
+      <div class="erows">
+        <div><span>Network</span><em>SOLANA</em></div>
+        <div><span>Address</span><em id="ev-ca">PENDING</em></div>
+        <div><span>Feed</span><em id="ev-feed">SYNCING</em></div>
+      </div>
+      <div class="mini">
+        <div><b id="mn-n">—</b><span>Tiles</span></div>
+        <div><b id="mn-up">—</b><span>Risers</span></div>
+        <div><b id="mn-dn">—</b><span>Fallers</span></div>
+      </div>
+      <div class="acts">
+        <button class="btn dk" id="reload" type="button">Reload feed</button>
+        <button class="btn" id="copy-lead" type="button" disabled>Copy leader</button>
+      </div>
+      <p class="note">Tiles arrive untouched by hand.</p>
+    </div>
+
+    <div class="box tabs">
+      <div class="th" role="tablist" aria-label="Quick lists" id="rail-tabs">
+        <button type="button" role="tab" aria-selected="true" data-rail="up" id="rt-up">Risers</button>
+        <button type="button" role="tab" aria-selected="false" data-rail="dn" id="rt-dn" tabindex="-1">Fallers</button>
+        <button type="button" role="tab" aria-selected="false" data-rail="deep" id="rt-deep" tabindex="-1">Deepest</button>
+      </div>
+      <div class="tp" role="tabpanel" aria-labelledby="rt-up" id="rail-panel"><ul class="feed" id="rail-list"><li class="sk-li"><span class="sk sk-line"></span></li><li class="sk-li"><span class="sk sk-line"></span></li><li class="sk-li"><span class="sk sk-line"></span></li><li class="sk-li"><span class="sk sk-line"></span></li></ul></div>
+    </div>
+
+    <div class="box rosterbox spot"><div class="roster" id="roster" aria-label="Tiles"></div></div>
+  </aside>
+</div>
+<script id="register-data" type="application/json"><!--@REGISTER_JSON--></script>
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+{
+  "source": {
+    "file": "brand/LOGO LETTERS PNG...png",
+    "sha1": "88c7fe79baf51bbf54e86bb5ea91aed49a721c73",
+    "width": 2000,
+    "height": 2000,
+    "bitDepth": 8,
+    "colorType": 6,
+    "interlace": 0,
+    "colorTypeName": "rgba",
+    "alpha": {
+      "transparent": 3343855,
+      "partial": 9702,
+      "opaque": 646443
+    },
+    "bbox": [
+      463,
+      596,
+      1534,
+      1404
+    ],
+    "distinctOpaqueColours": 24070,
+    "method": "exact-pixel histogram of fully opaque pixels, greedy OKLab families (distance < 0.04), kept when share >= 0.004; family colour = pixel-weighted mean"
+  },
+  "background": {
+    "brand/LOGO LETTERS PNG.png": {
+      "corners": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "uniform": true,
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "oklch": "oklch(0 0 0)"
+    }
+  },
+  "palette": {
+    "dark-1": {
+      "rgb": [
+        4,
+        5,
+        4
+      ],
+      "oklch": "oklch(0.1122 0.0046 145.3)",
+      "share": 0.0057,
+      "pixels": 3665,
+      "mostCommonExactPixel": [
+        6,
+        6,
+        5
+      ],
+      "firstSeenAt": [
+        933,
+        764
+      ]
+    },
+    "dark-2": {
+      "rgb": [
+        12,
+        11,
+        10
+      ],
+      "oklch": "oklch(0.1504 0.0027 67.5)",
+      "share": 0.0252,
+      "pixels": 16302,
+      "mostCommonExactPixel": [
+        14,
+        14,
+        12
+      ],
+      "firstSeenAt": [
+        1030,
+        756
+      ]
+    },
+    "dark-3": {
+      "rgb": [
+        23,
+        23,
+        21
+      ],
+      "oklch": "oklch(0.2038 0.0039 106.7)",
+      "share": 0.304,
+      "pixels": 196517,
+      "mostCommonExactPixel": [
+        23,
+        23,
+        22
+      ],
+      "firstSeenAt": [
+        958,
+        755
+      ]
+    },
+    "dark-4": {
+      "rgb": [
+        36,
+        36,
+        34
+      ],
+      "oklch": "oklch(0.2596 0.0037 106.7)",
+      "share": 0.0616,
+      "pixels": 39800,
+      "mostCommonExactPixel": [
+        33,
+        33,
+        32
+      ],
+      "firstSeenAt": [
+        932,
+        619
+      ]
+    },
+    "dark-5": {
+      "rgb": [
+        50,
+        49,
+        46
+      ],
+      "oklch": "oklch(0.3131 0.0054 91.6)",
+      "share": 0.0279,
+      "pixels": 18006,
+      "mostCommonExactPixel": [
+        50,
+        49,
+        47
+      ],
+      "firstSeenAt": [
+        911,
+        617
+      ]
+    },
+    "dark-6": {
+      "rgb": [
+        79,
+        75,
+        71
+      ],
+      "oklch": "oklch(0.4154 0.0085 67.6)",
+      "share": 0.0135,
+      "pixels": 8706,
+      "mostCommonExactPixel": [
+        76,
+        74,
+        72
+      ],
+      "firstSeenAt": [
+        1094,
+        604
+      ]
+    },
+    "dark-7": {
+      "rgb": [
+        94,
+        88,
+        81
+      ],
+      "oklch": "oklch(0.4639 0.0136 71.7)",
+      "share": 0.0042,
+      "pixels": 2730,
+      "mostCommonExactPixel": [
+        87,
+        85,
+        83
+      ],
+      "firstSeenAt": [
+        914,
+        599
+      ]
+    },
+    "light-1": {
+      "rgb": [
+        130,
+        115,
+        95
+      ],
+      "oklch": "oklch(0.5638 0.035 74.9)",
+      "share": 0.0068,
+      "pixels": 4428,
+      "mostCommonExactPixel": [
+        134,
+        115,
+        93
+      ],
+      "firstSeenAt": [
+        826,
+        702
+      ]
+    },
+    "light-2": {
+      "rgb": [
+        148,
+        131,
+        109
+      ],
+      "oklch": "oklch(0.6194 0.038 74.1)",
+      "share": 0.0078,
+      "pixels": 5021,
+      "mostCommonExactPixel": [
+        151,
+        135,
+        114
+      ],
+      "firstSeenAt": [
+        1131,
+        858
+      ]
+    },
+    "light-3": {
+      "rgb": [
+        166,
+        149,
+        128
+      ],
+      "oklch": "oklch(0.6791 0.0361 73)",
+      "share": 0.0392,
+      "pixels": 25372,
+      "mostCommonExactPixel": [
+        165,
+        148,
+        128
+      ],
+      "firstSeenAt": [
+        956,
+        1022
+      ]
+    },
+    "light-4": {
+      "rgb": [
+        190,
+        173,
+        152
+      ],
+      "oklch": "oklch(0.7564 0.0352 73.1)",
+      "share": 0.0326,
+      "pixels": 21092,
+      "mostCommonExactPixel": [
+        189,
+        173,
+        153
+      ],
+      "firstSeenAt": [
+        1278,
+        627
+      ]
+    },
+    "light-5": {
+      "rgb": [
+        206,
+        189,
+        167
+      ],
+      "oklch": "oklch(0.8067 0.0358 74.3)",
+      "share": 0.0045,
+      "pixels": 2913,
+      "mostCommonExactPixel": [
+        206,
+        190,
+        170
+      ],
+      "firstSeenAt": [
+        1275,
+        631
+      ]
+    },
+    "light-6": {
+      "rgb": [
+        224,
+        208,
+        189
+      ],
+      "oklch": "oklch(0.8656 0.0313 72.1)",
+      "share": 0.369,
+      "pixels": 238545,
+      "mostCommonExactPixel": [
+        222,
+        206,
+        186
+      ],
+      "firstSeenAt": [
+        1264,
+        627
+      ]
+    },
+    "light-7": {
+      "rgb": [
+        240,
+        225,
+        205
+      ],
+      "oklch": "oklch(0.9165 0.0313 75.2)",
+      "share": 0.0532,
+      "pixels": 34415,
+      "mostCommonExactPixel": [
+        234,
+        220,
+        201
+      ],
+      "firstSeenAt": [
+        889,
+        768
+      ]
+    },
+    "light-8": {
+      "rgb": [
+        251,
+        237,
+        216
+      ],
+      "oklch": "oklch(0.9516 0.0316 78.2)",
+      "share": 0.0098,
+      "pixels": 6360,
+      "mostCommonExactPixel": [
+        249,
+        233,
+        212
+      ],
+      "firstSeenAt": [
+        1261,
+        600
+      ]
+    },
+    "accent": {
+      "rgb": [
+        10,
+        234,
+        246
+      ],
+      "oklch": "oklch(0.853 0.1443 201.5)",
+      "share": 0.0209,
+      "pixels": 13538,
+      "mostCommonExactPixel": [
+        5,
+        233,
+        245
+      ],
+      "firstSeenAt": [
+        1133,
+        916
+      ]
+    }
+  }
+}
